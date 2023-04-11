@@ -1,0 +1,23 @@
+>python -m venv scrap_env
+>pip install -r requirements.txt
+
+uvicorn api:app --reload
+
+
+// server is the name of file 
+uvicon server:app --reload
+
+
+http://127.0.0.1:8000/
+
+
+** flask app  ** 
+>> in bash
+export FLASK_APP=hello.py
+export FLASK_ENV=development 
+flask run
+or 
+flask --app hello.py --debug run
+
+# deploy app to cloud 
+ gcloud app deploy
