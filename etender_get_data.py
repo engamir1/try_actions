@@ -238,7 +238,7 @@ def getLinks(url1):
         if "href" in link.attrs:
             if link.attrs["href"] not in pages:
                 newpage = link.attrs["href"]
-                # pages.add(newpage)
+                pages.add(newpage)
                 print(f"the url is :{newpage}")
                 getLinks(newpage)
 
@@ -252,6 +252,9 @@ def start_scrap(url: str):
     drop_tender_collection()
     insert_many(my_data)
     # print(f"i inserted {len(my_data)}")
+
+
+# start_scrap("https://etenders.gov.eg/")
 
 
 if __name__ == "__main__":
