@@ -1,6 +1,6 @@
 import os
 
-from dotenv import find_dotenv, load_dotenv
+# from dotenv import find_dotenv, load_dotenv
 from pymongo import MongoClient
 
 # import pprint
@@ -9,14 +9,14 @@ from pymongo import MongoClient
 # from etender_get_data import *
 # print(my_data)
 
-load_dotenv(find_dotenv())
+# load_dotenv(find_dotenv())
 # get password from env file
-password = os.getenv("MONGODB_PW")
+# password = os.getenv("MONGODB_PW")
 
 # connection_string = f"mongodb+srv://medo00001:{password}@cluster0.1k8ou.mongodb.net/?retryWrites=true&w=majority"
 
 connection_string = (
-    f"mongodb+srv://medo00001:{password}@cluster0.1k8ou.mongodb.net/test"
+    "mongodb+srv://medo00001:KdOY93oz1MmMAfMN@cluster0.1k8ou.mongodb.net/test"
 )
 # connect to client
 client = MongoClient(connection_string)
