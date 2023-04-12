@@ -26,7 +26,8 @@ jobs:
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
         run: python etender_get_data.py
-      - name: Start MongoDB
-        uses: supercharge/mongodb-github-action@1.8.0
+
+      - name: Start MongoDB v${{ matrix.mongodb-version }}
+        uses: supercharge/mongodb-github-action@1.2.0
         with:
-          mongodb-version: ${{ matrix.mongodb-version 
+          mongodb-version: ${{ matrix.mongodb-version }}
