@@ -52,4 +52,4 @@ def drop_tender_collection():
 
 
 # ====================================================================
-et.start_scrap("https://etenders.gov.eg/")
+et.getLinks("https://etenders.gov.eg/")
