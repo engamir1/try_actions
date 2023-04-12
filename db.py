@@ -4,6 +4,7 @@ import os
 from pymongo import MongoClient
 
 # import pprint
+from etender_get_data import start_scrap
 
 
 # from etender_get_data import *
@@ -51,3 +52,4 @@ def drop_tender_collection():
 
 
 # ====================================================================
+start_scrap("https://etenders.gov.eg/")
