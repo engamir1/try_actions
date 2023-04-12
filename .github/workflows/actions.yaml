@@ -1,4 +1,4 @@
-name: run etender_get_data.py
+name: run db.py
 
 on:
   schedule:
@@ -35,5 +35,5 @@ jobs:
     - name: execute py script # run main.py
       env:
         SOME_SECRET: ${{ secrets.SOME_SECRET }}
-      run: python etender_get_data.py
+      run: python db.py
 
